@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CloudCompare2.10\plugins\ccDefaultPluginInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CloudCompare2.10\plugins\ccStdPluginInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_vbbddescriptor_dialog.cpp" />
+    <ClCompile Include="VBBDDescriptor.cpp" />
+    <ClCompile Include="vbbddescriptor_dialog.cpp" />
+    <ClCompile Include="VBBDDescriptorSC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_vbbddescriptor.h" />
+    <ClInclude Include="VBBDDescriptor.h" />
+    <ClInclude Include="vbbddescriptor_dialog.h" />
+    <ClInclude Include="VBBDDescriptorSC.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt" />
+    <CustomBuild Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38012296-FB9F-3A16-ACF2-4813FA21B8A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{19A7FAC6-73C2-331D-8255-D6CEBB8F7424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

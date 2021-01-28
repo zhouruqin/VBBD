@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89280939-8AF2-442A-87E3-77AAD12AA35B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>VBBDDescriptorPlugin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CloudCompare2.10\VS2017_64\Bin\Debug\plugins</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VBBDDescriptorPlugin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VBBDDescriptorPlugind</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CloudCompare2.10\VS2017_64\Bin\Release\plugins</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VBBDDescriptorPlugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VBBDDescriptorPlugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VBBDDescriptorPlugin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VBBDDescriptorPlugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VBBDDescriptorPlugin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VBBDDescriptorPlugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Debug;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Debug;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Debug;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target VBBDDescriptorPlugin</Message>
+      <Command>setlocal
+cd E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -E cmake_autogen E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/VBBDDescriptorPlugin_autogen.dir Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\libs\CCFbo\Debug\CC_FBO_LIBd.lib;..\..\..\libs\qCC_io\Debug\QCC_IO_LIBd.lib;..\..\..\libs\qCC_glWindow\Debug\QCC_GL_LIBd.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdalcpp.lib;ws2_32.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdal_util.lib;..\..\..\libs\qCC_db\Debug\QCC_DB_LIBd.lib;..\..\..\libs\CCFbo\Debug\CC_FBO_LIBd.lib;..\..\..\CC\Debug\CC_CORE_LIBd.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Concurrentd.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGLd.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Widgetsd.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGLExtensionsd.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Guid.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib;D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CloudCompare2.10/VS2017_64/lib/Debug/VBBDDescriptorPlugind.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/Debug/VBBDDescriptorPlugind.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Release;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SECURE_SCL=0;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Release;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_Release;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target VBBDDescriptorPlugin</Message>
+      <Command>setlocal
+cd E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -E cmake_autogen E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/VBBDDescriptorPlugin_autogen.dir Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\libs\CCFbo\Release\CC_FBO_LIB.lib;..\..\..\libs\qCC_io\Release\QCC_IO_LIB.lib;..\..\..\libs\qCC_glWindow\Release\QCC_GL_LIB.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\lib\pdalcpp.lib;ws2_32.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\lib\pdal_util.lib;..\..\..\libs\qCC_db\Release\QCC_DB_LIB.lib;..\..\..\CC\Release\CC_CORE_LIB.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Concurrent.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGLExtensions.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Gui.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib;D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CloudCompare2.10/VS2017_64/lib/Release/VBBDDescriptorPlugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/Release/VBBDDescriptorPlugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_MinSizeRel;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_MinSizeRel;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_MinSizeRel;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target VBBDDescriptorPlugin</Message>
+      <Command>setlocal
+cd E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -E cmake_autogen E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/VBBDDescriptorPlugin_autogen.dir MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\libs\CCFbo\MinSizeRel\CC_FBO_LIB.lib;..\..\..\libs\qCC_io\MinSizeRel\QCC_IO_LIB.lib;..\..\..\libs\qCC_glWindow\MinSizeRel\QCC_GL_LIB.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdalcpp.lib;ws2_32.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdal_util.lib;..\..\..\libs\qCC_db\MinSizeRel\QCC_DB_LIB.lib;..\..\..\libs\CCFbo\MinSizeRel\CC_FBO_LIB.lib;..\..\..\CC\MinSizeRel\CC_CORE_LIB.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Concurrent.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGLExtensions.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Gui.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib;D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/MinSizeRel/VBBDDescriptorPlugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/MinSizeRel/VBBDDescriptorPlugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_RelWithDebInfo;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4800;4267;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CC_USE_AS_DLL;QCC_DB_USE_AS_DLL;QCC_IO_USE_AS_DLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_OPENGLEXTENSIONS_LIB;QT_CONCURRENT_LIB;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";VBBDDescriptorPlugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_RelWithDebInfo;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\include_RelWithDebInfo;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGLExtensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target VBBDDescriptorPlugin</Message>
+      <Command>setlocal
+cd E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -E cmake_autogen E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/VBBDDescriptorPlugin_autogen.dir RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\libs\CCFbo\RelWithDebInfo\CC_FBO_LIB.lib;..\..\..\libs\qCC_io\RelWithDebInfo\QCC_IO_LIB.lib;..\..\..\libs\qCC_glWindow\RelWithDebInfo\QCC_GL_LIB.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdalcpp.lib;ws2_32.lib;D:\vcpkg\vcpkg-master\installed\x64-windows\debug\lib\pdal_util.lib;..\..\..\libs\qCC_db\RelWithDebInfo\QCC_DB_LIB.lib;..\..\..\libs\CCFbo\RelWithDebInfo\CC_FBO_LIB.lib;..\..\..\CC\RelWithDebInfo\CC_CORE_LIB.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Concurrent.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5OpenGLExtensions.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Gui.lib;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib;D:/vcpkg/vcpkg-master/installed/x64-windows/share/pdal/../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/RelWithDebInfo/VBBDDescriptorPlugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/RelWithDebInfo/VBBDDescriptorPlugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.2-win32-x86\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_VBBDDescriptorPlugin.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\Qt\Qt5.6_x64\5.6\msvc2015_64\bin\rcc.exe --name VBBDDescriptorPlugin --output E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/qrc_VBBDDescriptorPlugin.cpp E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\images\icon.png;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_VBBDDescriptorPlugin.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\Qt\Qt5.6_x64\5.6\msvc2015_64\bin\rcc.exe --name VBBDDescriptorPlugin --output E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/qrc_VBBDDescriptorPlugin.cpp E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\images\icon.png;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_VBBDDescriptorPlugin.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\Qt\Qt5.6_x64\5.6\msvc2015_64\bin\rcc.exe --name VBBDDescriptorPlugin --output E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/qrc_VBBDDescriptorPlugin.cpp E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\images\icon.png;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_VBBDDescriptorPlugin.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\Qt\Qt5.6_x64\5.6\msvc2015_64\bin\rcc.exe --name VBBDDescriptorPlugin --output E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/qrc_VBBDDescriptorPlugin.cpp E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/VBBDDescriptorPlugin.qrc;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\images\icon.png;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc_vbbddescriptor_dialog.cpp" />
+    <ClCompile Include="VBBDDescriptor.cpp" />
+    <ClCompile Include="VBBDDescriptorSC.cpp" />
+    <ClCompile Include="vbbddescriptor_dialog.cpp" />
+    <ClInclude Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.h" />
+    <ClCompile Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.cpp" />
+    <ClCompile Include="E:\CloudCompare2.10\plugins\ccDefaultPluginInterface.cpp" />
+    <ClCompile Include="E:\CloudCompare2.10\plugins\ccStdPluginInterface.cpp" />
+    <ClCompile Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\qrc_VBBDDescriptorPlugin.cpp" />
+    <ClInclude Include="ui_vbbddescriptor.h" />
+    <ClInclude Include="VBBDDescriptor.h" />
+    <ClInclude Include="VBBDDescriptorSC.h" />
+    <ClInclude Include="vbbddescriptor_dialog.h" />
+    <None Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\info.json" />
+    <ClCompile Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin_autogen\mocs_compilation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\ZERO_CHECK.vcxproj">
+      <Project>{84896E56-9972-3DC1-AE24-D4F1A34B364F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\CC\CC_CORE_LIB.vcxproj">
+      <Project>{C28F068F-FDAF-3D92-ACCD-9E19DE00E665}</Project>
+      <Name>CC_CORE_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\libs\CCFbo\CC_FBO_LIB.vcxproj">
+      <Project>{7A4716CA-CF96-376C-9F81-786D8A29BBB5}</Project>
+      <Name>CC_FBO_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\libs\qCC_db\QCC_DB_LIB.vcxproj">
+      <Project>{81F1608C-57B2-34B4-8E56-3B2CB8DF696E}</Project>
+      <Name>QCC_DB_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\libs\qCC_glWindow\QCC_GL_LIB.vcxproj">
+      <Project>{C690A8D6-F994-3531-A73A-3E161D0FF6FD}</Project>
+      <Name>QCC_GL_LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\libs\qCC_io\QCC_IO_LIB.vcxproj">
+      <Project>{3F14B52D-FCFC-345C-A739-B3C33B3BA86D}</Project>
+      <Name>QCC_IO_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

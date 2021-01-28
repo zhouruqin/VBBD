@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E1582FB-C957-3CB6-9EEC-286D29CB0885}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>INSTALL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CloudCompare2.10\VS2017_64\CMakeFiles\527055823a7b7950bb43ea2d0dc3231b\INSTALL_force.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CloudCompare2.10/VS2017_64/CMakeFiles/527055823a7b7950bb43ea2d0dc3231b/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CloudCompare2.10/VS2017_64/CMakeFiles/527055823a7b7950bb43ea2d0dc3231b/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CloudCompare2.10/VS2017_64/CMakeFiles/527055823a7b7950bb43ea2d0dc3231b/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CloudCompare2.10/VS2017_64/CMakeFiles/527055823a7b7950bb43ea2d0dc3231b/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\ZERO_CHECK.vcxproj">
+      <Project>{84896E56-9972-3DC1-AE24-D4F1A34B364F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\ALL_BUILD.vcxproj">
+      <Project>{829BD967-4AB0-39DB-9E24-700A814C829E}</Project>
+      <Name>ALL_BUILD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

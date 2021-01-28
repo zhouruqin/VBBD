@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{829BD967-4AB0-39DB-9E24-700A814C829E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtOpenGL;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtWidgets;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtGui;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtCore;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\.\mkspecs\win32-msvc2015;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtConcurrent;E:\Qt\Qt5.6_x64\5.6\msvc2015_64\include\QtPrintSupport;D:\vcpkg\vcpkg-master\installed\x64-windows\share\pdal\..\..\include;D:\vcpkg\vcpkg-master\installed\x64-windows\include\json;E:\CloudCompare2.10\plugins;E:\CloudCompare2.10\CC\include;E:\CloudCompare2.10\libs\CCFbo\include;E:\CloudCompare2.10\libs\qCC_io;E:\CloudCompare2.10\libs\qCC_db;E:\CloudCompare2.10\libs\qCC_db\msvc;E:\CloudCompare2.10\libs\qCC_glWindow;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\bin\cmake.exe -HE:/CloudCompare2.10 -BE:/CloudCompare2.10/VS2017_64 --check-stamp-file E:/CloudCompare2.10/VS2017_64/plugins/example/VBBDDescriptorPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/CloudCompare2.10/plugins/example/VBBDDescriptorPlugin/CMakeLists.txt;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;E:\CloudCompare2.10\plugins\CMakePluginTpl.cmake;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.qrc;D:\vcpkg-master\downloads\tools\cmake-3.10.2-windows\cmake-3.10.3-win64-x64\share\cmake-3.10\Modules\AutogenInfo.cmake.in;E:\CloudCompare2.10\plugins\example\VBBDDescriptorPlugin\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\ZERO_CHECK.vcxproj">
+      <Project>{84896E56-9972-3DC1-AE24-D4F1A34B364F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\CloudCompare2.10\VS2017_64\plugins\example\VBBDDescriptorPlugin\VBBDDescriptorPlugin.vcxproj">
+      <Project>{99256C99-2C31-323E-97AF-4E237A89379A}</Project>
+      <Name>VBBDDescriptorPlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
